@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="300" height="300">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d0d2b"/>
+      <stop offset="100%" style="stop-color:#1565C0"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#C8A400"/>
+      <stop offset="100%" style="stop-color:#FFD700"/>
+    </linearGradient>
+    <clipPath id="circle"><circle cx="150" cy="150" r="145"/></clipPath>
+  </defs>
+  <!-- Background -->
+  <circle cx="150" cy="150" r="150" fill="url(#bg)"/>
+  <!-- Gold ring -->
+  <circle cx="150" cy="150" r="145" fill="none" stroke="url(#gold)" stroke-width="4"/>
+  <!-- Body silhouette -->
+  <ellipse cx="150" cy="230" rx="70" ry="50" fill="#1565C0" opacity="0.8" clip-path="url(#circle)"/>
+  <!-- Head -->
+  <circle cx="150" cy="130" r="55" fill="#2a1a0a"/>
+  <!-- Face details -->
+  <circle cx="150" cy="128" r="48" fill="#3d2512"/>
+  <!-- Glasses -->
+  <rect x="112" y="118" width="28" height="18" rx="5" fill="none" stroke="url(#gold)" stroke-width="2.5"/>
+  <rect x="148" y="118" width="28" height="18" rx="5" fill="none" stroke="url(#gold)" stroke-width="2.5"/>
+  <line x1="140" y1="127" x2="148" y2="127" stroke="url(#gold)" stroke-width="2"/>
+  <line x1="112" y1="127" x2="106" y2="124" stroke="url(#gold)" stroke-width="2"/>
+  <line x1="176" y1="127" x2="182" y2="124" stroke="url(#gold)" stroke-width="2"/>
+  <!-- Smile -->
+  <path d="M135 148 Q150 160 165 148" fill="none" stroke="#FFD700" stroke-width="2" stroke-linecap="round"/>
+  <!-- Name tag -->
+  <rect x="60" y="240" width="180" height="42" rx="8" fill="rgba(255,215,0,0.15)" stroke="url(#gold)" stroke-width="1.5"/>
+  <text x="150" y="257" text-anchor="middle" font-family="Georgia,serif" font-size="11" fill="#FFD700" font-weight="bold">Ingénieur</text>
+  <text x="150" y="274" text-anchor="middle" font-family="Georgia,serif" font-size="12" fill="#FFFFFF" font-weight="bold">Derinard Ritchy</text>
+</svg>
